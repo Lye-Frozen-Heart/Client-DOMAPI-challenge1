@@ -3,6 +3,9 @@
 1. Answer the following questions:
 
    - How would you select from JavaScript an element `p` that has the class `text` and also the class `important`?
+   ```js
+   const paragraph = document.querySelector("p.text")
+   ```
    - How would you select from JavaScript a `button` element with class `button` and that is disabled?
    - How would you select from JavaScript all the `li` elements that are direct children of an `ul` element with class `list`?
    - How would you select from JavaScript all the `input` elements that are descendants of a `form` element with class `form-new-item`, and that have a `type` attribute with a value `text`?
