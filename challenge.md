@@ -22,7 +22,7 @@
   //Alex Answer
     const inputTextsArray = document.querySelectorAll('form.form-new-item>input[type="text"]');
    ``` 
-``2. From the following HTML structure, create a script that selects the header "The MEAN stack". Next, change the text to "The MERN stack" and remove the "subtitle" class.
+2. From the following HTML structure, create a script that selects the header "The MEAN stack". Next, change the text to "The MERN stack" and remove the "subtitle" class.
 
 ```html
 <main class="main-content">
