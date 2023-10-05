@@ -4,13 +4,21 @@
 
    - How would you select from JavaScript an element `p` that has the class `text` and also the class `important`?
    ```js
-   const paragraph = document.querySelector("p.text")
+    const importantParagraph = document.querySelector("p.text.important");
    ```
    - How would you select from JavaScript a `button` element with class `button` and that is disabled?
+   ```js
+    const disabledButton = document.querySelector("button:disabled.button");
+   ```
    - How would you select from JavaScript all the `li` elements that are direct children of an `ul` element with class `list`?
+   ```js
+    const listItemArray = document.querySelectorAll("ul.list>li");
+   ```
    - How would you select from JavaScript all the `input` elements that are descendants of a `form` element with class `form-new-item`, and that have a `type` attribute with a value `text`?
-
-2. From the following HTML structure, create a script that selects the header "The MEAN stack". Next, change the text to "The MERN stack" and remove the "subtitle" class.
+  ```js
+    const inputTextsArray = document.querySelectorAll('form.form-new-item>input[type="text"]');
+   ``` 
+``2. From the following HTML structure, create a script that selects the header "The MEAN stack". Next, change the text to "The MERN stack" and remove the "subtitle" class.
 
 ```html
 <main class="main-content">
@@ -24,7 +32,9 @@
   </section>
 </main>
 ```
-
+```js
+const subtitleHeader = document.querySelector('.subtitle'); subtitleHeader ? (subtitleHeader.textContent = 'The MERN stack',subtitleHeader.classList.remove('subtitle')) : null;
+```
 3. Here you have an HTML without data:
 
 ```html
