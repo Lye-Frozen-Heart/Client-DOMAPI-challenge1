@@ -48,3 +48,14 @@ const subtitleHeader = document.querySelector('.subtitle'); subtitleHeader ? (su
 Create a script where you declare a variable with a student's data
 (name, age and photo URL). Next, get the elements from the HTML
 and fill them in with the student's information.
+```js
+const studentData = {name: "Alexandre Torres",age: 20,photoUrl: "https://example.com/student.png"};
+const studentNameElement = document.querySelector('.student-name');
+const studentAgeElement = document.querySelector('.student-age');
+const studentPhotoElement = document.querySelector('.student-photo');
+studentNameElement && studentAgeElement && studentPhotoElement ?(
+studentNameElement.textContent = studentData.name,
+studentAgeElement.textContent = studentData.age,
+studentPhotoElement.src = studentData.photoUrl,
+studentPhotoElement.alt = studentData.name + "'s photo"):null;
+```
