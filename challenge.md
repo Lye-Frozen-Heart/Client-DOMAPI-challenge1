@@ -18,10 +18,10 @@
     const listItemArray = document.querySelectorAll("ul.list>li");
    ```
    - How would you select from JavaScript all the `input` elements that are descendants of a `form` element with class `form-new-item`, and that have a `type` attribute with a value `text`?
-  ```js
-  //Alex Answer
-    const inputTextsArray = document.querySelectorAll('form.form-new-item>input[type="text"]');
-   ``` 
+    ```js
+    //Alex Answer
+      const inputTextsArray = document.querySelectorAll('form.form-new-item>input[type="text"]');
+    ``` 
 2. From the following HTML structure, create a script that selects the header "The MEAN stack". Next, change the text to "The MERN stack" and remove the "subtitle" class.
 
 ```html
