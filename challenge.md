@@ -38,7 +38,11 @@
 ```
 ```js
 //Alex Answer
-const subtitleHeader = document.querySelector('.subtitle'); subtitleHeader ? (subtitleHeader.textContent = 'The MERN stack',subtitleHeader.classList.remove('subtitle')) : null;
+const subtitleHeader = document.querySelector('.subtitle');
+if(subtitleHeader) {
+  $heading.textContent = "The MERN stack";
+  $heading.classList.remove("subtitle");
+}
 ```
 3. Here you have an HTML without data:
 
